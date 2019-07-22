@@ -23,8 +23,8 @@ check_versions_wipe_if_necessary() {
 	# $2 should be the old version
 
 	# cast as integers to be used
-	new=$(("$1" + 0))
-	old=$(("$2" + 0))
+	new=$(($1 + 0))
+	old=$(($2 + 0))
 	if [[ $old -lt $new ]]; then
 		echo "New version detected"
 		perform_wipe
